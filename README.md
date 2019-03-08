@@ -10,6 +10,8 @@ Not supported.
 
 ## Install
 
+The `bc` program must be installed.
+
 Run `install.sh` or add the contents of `set_moon_phase.sh` to your `.bashrc` file manually.
 
 ## Uninstall
