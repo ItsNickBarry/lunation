@@ -5,23 +5,23 @@ newmoon=592500           #Known new moon time (unix time). 7 Jan 1970 20:35
 phase_d=$((($now - $newmoon) % $lp))
 phase_number=$(echo 'scale=0; '${phase_d}'/86.400' | bc -l)
 
-if [[ -z "$phase_number" ]]; then
+if [ -z "$phase_number" ]; then
   CHAR="🌝"
-elif [[ $phase_number -lt 1000 ]]; then
+elif [ $phase_number -lt 1000 ]; then
   CHAR="🌑"
-elif [[ $phase_number -lt 6560 ]]; then
+elif [ $phase_number -lt 6560 ]; then
   CHAR="🌒"
-elif [[ $phase_number -lt 7560 ]]; then
+elif [ $phase_number -lt 7560 ]; then
   CHAR="🌓"
-elif [[ $phase_number -lt 14265 ]]; then
+elif [ $phase_number -lt 14265 ]; then
   CHAR="🌔"
-elif [[ $phase_number -lt 15265 ]]; then
+elif [ $phase_number -lt 15265 ]; then
   CHAR="🌕"
-elif [[ $phase_number -lt 21260 ]]; then
+elif [ $phase_number -lt 21260 ]; then
   CHAR="🌖"
-elif [[ $phase_number -lt 22260 ]]; then
+elif [ $phase_number -lt 22260 ]; then
   CHAR="🌗"
-elif [[ $phase_number -lt 29530 ]]; then
+elif [ $phase_number -lt 29530 ]; then
   CHAR="🌘"
 fi
 
