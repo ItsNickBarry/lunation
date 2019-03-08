@@ -3,7 +3,7 @@ lp=2551443               #Lunar period (unix time in seconds)=29.53 days
 now=$(date -u +"%s")     #Time now (unix time)
 newmoon=592500           #Known new moon time (unix time). 7 Jan 1970 20:35
 phase_d=$((($now - $newmoon) % $lp))
-phase_number=$(echo 'scale=0; '${phase_d}'/86.400' | bc -l)
+phase_number=$(echo 'scale=0; '${phase_d}'/86.400' | bc -l 2>/dev/null)
 
 if [ -z "$phase_number" ]; then
   CHAR="🌝"
