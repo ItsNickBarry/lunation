@@ -10,7 +10,7 @@ Not supported.
 
 ## Install
 
-The `bc` program must be installed.  Otherwise, the moon will stare back at you with knowing eyes: `🌝`.
+The `bc` program must be installed.  Otherwise, the moon will stare back at you with knowing eyes: 🌝.
 
 Run `install.sh` or add the contents of `set_moon_phase.sh` to your `.bashrc` file manually.
 
