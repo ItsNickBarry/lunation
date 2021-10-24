@@ -18,6 +18,8 @@ Run `install.sh` or add the contents of `set_moon_phase.sh` to your `.bashrc` fi
 
 Remove the lines from your `.bashrc` file which match the contents of `set_moon_phase.sh`.
 
+___
+
 ![screenshot](./screenshot.png)
 
 ## See Also
